@@ -8,11 +8,11 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'Running tests'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         echo 'Running tests'
+        //     }
+        // }
 
         // stage('Deploy') {
         //     steps {
