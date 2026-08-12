@@ -14,11 +14,11 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                echo 'Deploying application'
-            }
-        }
+        // stage('Deploy') {
+        //     steps {
+        //         echo 'Deploying application'
+        //     }
+        // }
     }
 
     post {
