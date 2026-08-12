@@ -2,12 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Pull') {
             steps {
                 echo 'Building application'
             }
         }
 
+stage('Build') {
+            steps {
+                echo 'Building application'
+            }
+        }
         stage('Test') {
             steps {
                 echo 'Running tests'
@@ -18,15 +23,6 @@ pipeline {
             steps {
                 echo 'Deploying application'
             }
-        }
-    }
-
-    post {
-        success {
-            echo 'Pipeline completed successfully'
-        }
-        failure {
-            echo 'Pipeline failed'
         }
     }
 }
