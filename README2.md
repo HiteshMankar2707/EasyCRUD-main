@@ -1,4 +1,4 @@
-🧩 Pipeline Stages Explained
+# 🧩 Pipeline Stages Explained
 
 <!-- Checkout -->
 
