@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                echo 'Building application'
+                git branch: 'main', url: 'https://github.com/HiteshMankar2707/EasyCRUD-main.git'
             }
         }
 
