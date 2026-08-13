@@ -1,7 +1,8 @@
 # Sonarqube Installation
 ## Install and configure Database
 ```shell
-apt install openjdk-17-jdk -y
+sudo apt update
+apt install openjdk-17-jdk -y. 
 apt install postgresql -y
 systemctl start postgresql
 sudo -u postgres psql
@@ -11,6 +12,12 @@ sudo -u postgres psql
 >> \c sonarqube;
 >> GRANT ALL PRIVILEGES ON SCHEMA public TO linux;
 >> \q
+```
+## Required java. 21
+```shell
+sudo apt update
+sudo apt install fontconfig openjdk-21-jre
+java -version
 ```
 
 ## Configure Linux Machine
