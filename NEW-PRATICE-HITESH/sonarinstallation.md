@@ -61,3 +61,11 @@ GO -> manage jenkins -> system -> SonarQube installations
 # How to add the sonarqube pipeline syntax in pipeline make sure SonarPlugin is installed 
 
 go to -> jenkins pipeline -> pipeline syntax -> check -> withSonarQubeEnvPrepare SonarQube Scanner environment
+
+# SonarQube added the stage quality gate 
+
+jenkins -> pipeline syntax -> timeout: enfore time out -> 10 minute -> wait till time it important because wait 10 minute otherwise fail without timeout it will wait we dont how much time
+
+# we need to creat the webhook in sonarqube 
+step1 -> go to the -> sonarqube -> administrator -> webook configure -> add jenkins URL -> PRIVATE IP:8080/sonarqube-webhook
+-> in short sonarqube send payload (message) to the jenkins code passes or not 
