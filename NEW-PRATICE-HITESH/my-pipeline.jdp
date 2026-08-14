@@ -23,8 +23,8 @@ pipeline {
         // }
          
          stage('TEST') {
-         steps {
-        withSonarQubeEnv(
+        steps {
+             withSonarQubeEnv(
             installationName: 'sonarqube',
             credentialsId: 'sonar_cred'
         ) {
@@ -36,11 +36,13 @@ pipeline {
         }
     }
 }
-        // stage('Quality Gate') {
-        //       steps {
-        //         waitForQualityGate abortPipeline: true, credentialsId: 'sonar_cred'
-        //         }
-        //     }
+       stage('QUALITY-GATE'){
+            steps {
+                timeout(10) {
+                    waitForQualityGate abortPipeline: false, credentialsId: 'sonar-cred'
+                }
+            } 
+        }       
 
         stage('Deploy') {
             steps {
