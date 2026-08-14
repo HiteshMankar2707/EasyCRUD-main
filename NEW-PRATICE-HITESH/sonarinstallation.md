@@ -57,3 +57,7 @@ sonarqube scanner
 GO -> manage jenkins -> system -> SonarQube installations
 
 # Go -> credetails all credential are stored there.
+
+# How to add the sonarqube pipeline syntax in pipeline make sure SonarPlugin is installed 
+
+go to -> jenkins pipeline -> pipeline syntax -> check -> withSonarQubeEnvPrepare SonarQube Scanner environment
