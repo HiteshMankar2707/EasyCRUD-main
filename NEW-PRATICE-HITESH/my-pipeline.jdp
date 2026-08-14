@@ -44,9 +44,9 @@ pipeline {
             } 
         }       
 
-        stage('Deploy') {
+        stage('S3-UPLOAD'){
             steps {
-                echo 'Deploying application'
+                sh 'aws s3 sync backend/target/student-registration-backend-0.0.1-SNAPSHOT.jar s3://easy-crud-bucket1/studentapp.jar'
             }
         }
         
