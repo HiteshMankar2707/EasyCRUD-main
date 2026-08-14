@@ -22,7 +22,6 @@ pipeline {
         //     }
         // }
          
-
          stage('TEST'){
             steps {
                 withSonarQubeEnv(installationName: 'sonarqube', credentialsId: 'sonar-cred') {
