@@ -49,3 +49,9 @@ cd /opt/sonar/bin/linux-x86-64
 ## SonarQube
 sqp_83d0147c52b3e869387a7c968cbc3e34474f6d8c
 
+## Jnekins 
+b501a2ba303b46e983d091adeb1555a5
+
+# Install plugin 
+sonarqube scanner 
+GO -> manage jenkins -> system -> SonarQube installations
