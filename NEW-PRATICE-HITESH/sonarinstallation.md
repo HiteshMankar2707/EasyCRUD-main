@@ -69,3 +69,6 @@ jenkins -> pipeline syntax -> timeout: enfore time out -> 10 minute -> wait till
 # we need to creat the webhook in sonarqube 
 step1 -> go to the -> sonarqube -> administrator -> webook configure -> add jenkins URL -> PRIVATE IP:8080/sonarqube-webhook
 -> in short sonarqube send payload (message) to the jenkins code passes or not 
+
+# we have to stored the artifact in s3 buckets 
+delivery -> studentapp.jar -> artifact s3 bucket -> versioning enable.
