@@ -52,6 +52,8 @@ sqp_83d0147c52b3e869387a7c968cbc3e34474f6d8c
 ## Jnekins 
 b501a2ba303b46e983d091adeb1555a5
 
-# Install plugin 
+# Install plugin  rght way add the credential in sonarqube instead of pipeline not recommanedded security point of view. 
 sonarqube scanner 
 GO -> manage jenkins -> system -> SonarQube installations
+
+# Go -> credetails all credential are stored there.
