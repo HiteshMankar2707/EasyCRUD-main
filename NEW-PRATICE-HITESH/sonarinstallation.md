@@ -74,4 +74,4 @@ step1 -> go to the -> sonarqube -> administrator -> webook configure -> add jenk
 delivery -> studentapp.jar -> artifact s3 bucket -> versioning enable.
 
 # how to webook configure in Github 
--> repo -> setting -> webhook -> add -> http://3.111.57.68:8080/github-webhook/ -> push event -> update. 
+-> repo -> setting -> webhook -> add -> http://3.111.57.68:8080/github-webhook/ -> push event -> update
