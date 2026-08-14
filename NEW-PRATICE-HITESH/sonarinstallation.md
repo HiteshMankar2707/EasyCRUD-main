@@ -75,3 +75,4 @@ delivery -> studentapp.jar -> artifact s3 bucket -> versioning enable.
 
 # how to webook configure in Github 
 -> repo -> setting -> webhook -> add -> http://3.111.57.68:8080/github-webhook/ -> push event -> update..
+Next go -> Jenkins Pipeline -> trigger -> GitHub hook trigger for GITScm polling -> enable it -> chnage ex. readme file we see that the build automatically trigger.
