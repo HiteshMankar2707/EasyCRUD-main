@@ -10,7 +10,7 @@ Performance Testing – Checks response time, load, scalability, and stability.
 End-to-End Testing – Tests the complete application workflow.
 Infrastructure Testing – Validates Terraform/CloudFormation infrastructure and configurations.
 
-# Yes. For an e-commerce project, explain the pipeline with separate DEV → QA → UAT → PROD environments. This is a much stronger interview answer because it shows environment promotion, testing ownership, approvals, and rollback.
+## Yes. For an e-commerce project, explain the pipeline with separate DEV → QA → UAT → PROD environments. This is a much stronger interview answer because it shows environment promotion, testing ownership, approvals, and rollback.
 
 ## Complete DevOps Pipeline
 
